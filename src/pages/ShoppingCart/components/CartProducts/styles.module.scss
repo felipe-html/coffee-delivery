@@ -1,0 +1,119 @@
+
+//Classe geral de frames
+.frame{
+    background-color: var(--base-card);
+    padding: 40px; 
+    border-radius: 6px 44px;
+    width: 100%;
+}
+
+//Ícone do título dos frames
+.frameIcon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+//Classe do agrupamento de ícone dos frames
+.frameTitle {
+    display: flex;
+    gap: .5rem;
+    align-items: flex-start;
+
+    .frameTitleDescription {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        div {
+            font-size: 16px !important;
+            color: var(--base-subtitle) !important;
+        }
+
+        span {
+            font-size: 14px !important;
+            color: var(--base-text) !important;
+        }
+    }
+}
+
+//Container frame produtos
+.productsContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 650px;
+    width: 90vw;
+
+    h1 {
+        font-size: 18px !important;
+        color: var(--base-subtitle);
+        font-family: "Baloo 2", sans-serif;
+    }
+}
+
+//Card de cafés
+.coffeesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.cartPriceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border-top: solid 1px var(--base-button);
+    padding-top: 1rem;
+}
+
+
+.totalOfItensAndDeliveryPrice{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--base-text);
+
+    span {
+        font-size: 16px;
+    }
+}
+
+.totalCartPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.submitButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        width: 100%;
+        border-radius: 6px;
+        background-color: var(--yellow);
+        border: none;
+        color: var(--white);
+        transition: filter .3s;
+        cursor: pointer;
+
+        &:hover {
+            filter: opacity(.8);
+        }
+    }
+
+}

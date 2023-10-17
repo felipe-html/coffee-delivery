@@ -1,0 +1,97 @@
+//Classe geral de frames
+.frame{
+    background-color: var(--base-card);
+    padding: 40px; 
+    border-radius: 6px;
+    max-width: 650px;
+    width: 90vw;
+}
+
+//Ícone do título dos frames
+.frameIcon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+//Classe do agrupamento de ícone dos frames
+.frameTitle {
+    display: flex;
+    gap: .5rem;
+    align-items: flex-start;
+
+    .frameTitleDescription {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        div {
+            font-size: 16px !important;
+            color: var(--base-subtitle) !important;
+        }
+
+        span {
+            font-size: 14px !important;
+            color: var(--base-text) !important;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+
+//Container do frame Pagamento
+.paymentMethodContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.paymentMethodCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--base-button);
+    border-radius: 6px;
+    width: 180px;
+    height: 50px;
+    gap: 12px;
+    padding: 16px;
+    cursor: pointer;
+    border: solid 1px transparent;
+
+    transition: all .3s;
+
+    p {
+        font-size: 12px;
+    }
+
+    img {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &:hover {
+        background-color: var(--purple-light);
+    }
+}
+
+.paymentSelected {
+    border: solid 1px var(--purple);
+    background-color: var(--purple-light);
+}
+
+@media(max-width: 700px) {
+    .paymentMethodContainer {
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,46 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 1120px;
+    gap: 4rem;
+    align-items: center;
+
+    .subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 32px;
+        font-family: "Baloo 2", sans-serif;
+        line-height: 130%;
+        color: var(--base-title);
+    }
+}
+
+// Container de cards de café
+.coffeesContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 1244px){
+    .coffeesContainer{
+        justify-content: center;
+    }
+}

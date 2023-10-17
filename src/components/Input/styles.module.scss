@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+
+}
+
+.errorMessage {
+    color: var(--red);
+    font-size: .8rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.large {
+    width: 100%;
+}
+
+.medium {
+    width: 40%;
+    min-width: 100px;
+}
+
+.short {
+    width: 15%;
+    min-width: 55px;
+}
+
+.input {
+    display: flex;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: var(--base-input);
+    border: solid 1px var(--base-button);
+    width: 100%;
+}
+
+.inputError {
+    border: solid 1px var(--red);
+ 
+}
+
+.optional {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+
+    &::after{
+        content: "Opcional";
+        width: 100%;
+        height: 100%;
+        color: var(--base-label);
+        font-style: italic;
+    }
+}
+

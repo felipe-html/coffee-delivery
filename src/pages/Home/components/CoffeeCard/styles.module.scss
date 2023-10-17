@@ -1,0 +1,146 @@
+
+//Card de café
+.coffeeCard {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    height: 310px;
+    background-color: var(--base-card);
+    border-radius: 6px 36px;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    padding: 20px;
+
+    //Imagem do card
+    img {
+        width: 120px;
+        height: 120px;
+        margin-top: -60px;
+    }
+    
+    //Título do card
+    h1 {
+        font-weight: 700;
+        font-size: 20px !important;
+        color: var(--base-subtitle);
+        text-align: center;
+    }
+
+    //Descrição do card
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--base-label);
+        text-align: center;
+    }
+}
+
+//Container das tags de categoria
+.tagsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    //Tag de categoria
+    span {
+        font-weight: 700;
+        font-size: 12px;
+        color: var(--yellow-dark);
+        font-family: "Roboto", sans-serif;
+        background-color: var(--yellow-light);
+        padding: 4px 8px;
+        border-radius: 100px;
+    }
+}
+
+
+//Bloco de preço e botão de adicionar ao carrinho
+.priceContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--base-text);
+            font-family: "Roboto", sans-serif;
+        }
+
+        p {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 100%;
+            color: var(--base-text);
+            font-family: "Baloo 2", sans-serif;
+        }
+    }
+}
+
+//Container dos botões de quantidade e adicionar ao carrinho
+.quantityAndAddToCartContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+//Botões de alterar a quantidade
+.quantityContainer {
+    display: flex;
+    background-color: var(--base-button);
+    width: 72px;
+    height: 38px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+
+    p {
+        color: var(--purple);
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--purple);
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: var(--base-hover);
+        }
+    }
+}
+
+//Botão adicionar ao carrinho
+.addtoCartButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple-dark);
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: filter .3s;
+
+    svg {
+        color: var(--base-card);
+    }
+
+    &:hover {
+        filter: opacity(0.9)
+    }
+}

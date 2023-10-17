@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea, button {
+    font-family: "Roboto", sans-serif;
+    line-height: 130%;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--base-text);
+}
+
+body {
+    background-color: var(--background);
+}
+
+input:focus {
+    outline: solid 1.8px var(--yellow);
+}
+
+.title {
+    font-family: "Baloo 2";
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--base-subtitle)
+}
+
+.regular {
+    font-size: 0.875rem;
+    color: var(--base-text);
+}
